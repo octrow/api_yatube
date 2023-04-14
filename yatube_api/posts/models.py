@@ -30,7 +30,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text
+        return f"{self.text[:15]}..,{self.author[:15]}"
 
 
 class Comment(models.Model):
